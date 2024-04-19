@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/header.ejs %>
+<body id="page-top" class="inner_page">
+<!-- Navigation-->
+<% include partials/searchableNav.ejs %>
+<!-- Masthead-->
+
+<header class="inner_banner">
+    <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h2 class="mx-auto my-0 text-uppercase text-white">Schedule Workout </h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="section_padding bg-light" id="talk_to_us">
+    <div class="container registration-container">
+        <div class="row">
+            <div class="col-md-6 registration-image"
+                 style=" background: url('images/gym3.jpg') center center/cover !important;">
+
+            </div>
+            <div class="col-md-6 registration-form">
+                <!-- Registration Form -->
+                <h2>Create a Workout Schedule</h2>
+                <form action="/workouts" method="post">
+                    <div class="mb-3">
+                        <input type="date" class="form-control" name="date" required
+                               placeholder="Date">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="number" class="form-control" name="no_of_sets" required
+                               placeholder="Number Of Sets">
+                    </div>
+                    <div class="mb-3">
+                        <select name="exercise_type" class="form-select" aria-label="Default select example">
+                            <option selected>Exercise Type</option>
+                            <option value="Bicep">Bicep</option>
+                            <option value="Curls">Curls</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" name="no_of_reps" required
+                               placeholder="Number Of Repetitions">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" name="rest_interval" required
+                               placeholder="Rest Intervals">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<% include partials/footer.ejs %>
+<!--Search Modal-->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search Fitness Fusion</h5>
+                <button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Search Form -->
+                <form>
+                    <div class="mb-3">
+                        <label for="searchInput" class="form-label">Enter Your Fitness Goal</label>
+                        <input type="text" class="form-control" id="searchInput"
+                               placeholder="Eg. Biceps">
+                    </div>
+                    <!-- Add any additional form fields as needed -->
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Get Exercise Recommendation</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

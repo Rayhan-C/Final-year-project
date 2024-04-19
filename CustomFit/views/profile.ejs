@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include partials/header.ejs %>
+<body id="page-top" class="inner_page">
+<!-- Navigation-->
+<% include partials/nav.ejs %>
+<!-- Masthead-->
+
+<header class="inner_banner">
+    <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h2 class="mx-auto my-0 text-uppercase text-white">User Profile </h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section_padding bg-light" id="talk_to_us">
+    <div class="container registration-container">
+        <div class="row">
+            <div class="col-md-6 registration-image">
+
+            </div>
+            <div class="col-md-6 registration-form">
+                <h2>My Profile</h2>
+                <h5>Name: <%= user.username %></h5>
+                <h6>Email: <%= user.email %></h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add more profile fields as needed -->
+
+<!-- Footer-->
+<% include partials/footer.ejs %>
+
+</body>
+</html>

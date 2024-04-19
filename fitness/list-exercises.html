@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Exercises </title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top" class="inner_page">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"/></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    Menu
+    <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+    <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Exercises
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="exercise.html">+ Add Exercise</a></li>
+      <li><a class="dropdown-item" href="list-exercises.html">List Exercises</a></li>  
+      </ul>
+      </li> 
+    
+    <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Workouts
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="workouts.html">+ Add Workout</a></li>
+      <li><a class="dropdown-item" href="list-workouts.html">List Workouts</a></li>  
+      </ul>
+      </li>   
+    <li class="nav-item"><a class="nav-link" href="progress-track.html">Progress</a></li>                    
+    
+    <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Account
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+    
+    </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i> Search</a>
+      </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+<!-- Masthead-->
+
+<header class="inner_banner" >
+<div class="container px-4 px-lg-5 d-flex align-items-center justify-content-center">
+<div class="d-flex justify-content-center">
+<div class="text-center">
+<h2 class="mx-auto my-0 text-uppercase text-white">My Workouts </h2>
+</div>
+</div>
+</div>
+</header>
+  
+
+<section class="section_padding bg-light" id="talk_to_us">
+    <div class="container list_container">
+       
+            <div class="card">
+                <div class="card-header text_right bg-dark">
+                <h6 class="text-white">My Exercises
+                <span><a href="exercise.html" class="btn btn-danger btn-sm float-end text-white"
+                style="text-align: right !important"> <i class="fas fa-plus"></i> Add New</a></span>
+                </h6>
+                </div>
+                <div class="card-body">
+                <div class="table-responsive">
+                <table id="" class="table table-striped table-sm ">
+                <thead>
+                <tr>
+                <th>#ID</th><th> Exercise Name </th><th>Description</th><th> Category</th>
+                <th>Demo Links </th><th class="no-sort">Actions</th>
+                </tr>
+                </thead>
+                <tbody> 
+                <tr>
+                    <td>3</td>
+                <td>Bench press</td>
+                <td>Sample description</td>
+                <td>Category X</td>
+                <td>link 1, link 2</td>
+                          
+                
+                <td class="aktions">
+                <a href="" class="badge bg-primary">Edit</a>
+                <a href="" class="badge bg-danger">Delete</a>
+                </td>
+                
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>Tricep dips</td>
+                    <td>Sample description</td>
+                    <td>Category X</td>
+                    <td>link 1, link 2</td>            
+                    
+                    <td class="aktions">
+                    <a href="" class="badge bg-primary">Edit</a>
+                    <a href="" class="badge bg-danger">Delete</a>
+                    </td>
+                    
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Planks</td>
+                        <td>Sample description</td>
+                <td>Category X</td>
+                <td>link 1, link 2</td>           
+                        
+                        <td class="aktions">
+                        <a href="" class="badge bg-primary">Edit</a>
+                        <a href="" class="badge bg-danger">Delete</a>
+                        </td>
+                        
+                        </tr>
+                        
+             
+                
+                
+                </tbody>
+                
+                </table>
+                </div>
+                
+                </div>
+                
+                </div>
+            
+          
+      </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer bg-masthead small text-center text-white">
+<div class="container px-4 px-lg-5">Copyright &copy; CustomFit 2024</div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--include jQuery-->
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<!-- Core custom JS-->
+<script src="js/scripts.js"></script>
+<!--Search Modal-->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Search CustomFit</h5>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Search Form -->
+          <form>
+            <div class="mb-3">
+              <label for="searchInput" class="form-label">Enter Your Fitness Goal</label>
+              <input type="text" class="form-control" id="searchInput" placeholder="Eg. Biceps">
+            </div>
+            <!-- Add any additional form fields as needed -->
+          </form>
+        </div>
+        <div class="modal-footer">      
+          <button type="button" class="btn btn-primary">Get Exercise Recommendation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
