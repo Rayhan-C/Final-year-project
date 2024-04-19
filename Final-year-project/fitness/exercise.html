@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>Exercises :: CustomFit</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top" class="inner_page">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png"/></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>                       
+              <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+              <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Account
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item dropdown" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    + More
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="health-recipes.html">Healthy Recipes</a></li>
+                    <li><a class="dropdown-item" href="feedback.html"> Feedback</a></li>
+                    <li><a class="dropdown-item" href="workout-info">Workout Info</a></li>
+                    <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+                     
+                    
+                  </ul>
+                </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<!-- Masthead-->
+
+<header class="inner_banner" >
+<div class="container px-4 px-lg-5 d-flex align-items-center justify-content-center">
+<div class="d-flex justify-content-center">
+<div class="text-center">
+<h2 class="mx-auto my-0 text-uppercase text-white">Exercises </h2>
+</div>
+</div>
+</div>
+</header>
+  
+
+<section class="section_padding bg-light" id="talk_to_us">
+    <div class="container registration-container">
+        <div class="row">
+          <div class="col-md-6 registration-image" >
+           
+          </div>
+          <div class="col-md-6 registration-form">
+            <!-- Registration Form -->
+            <h2>Create an Exercise</h2>
+            <form>
+              <div class="mb-3">                
+                <input type="text" class="form-control" name="name" required placeholder="Exercise Name">
+              </div>
+              <div class="mb-3">
+                <div class="form-floating">
+                    <textarea class="form-control" rows="2" placeholder="Description" id="desc"></textarea>
+                    <label for="floatingTextarea">Description</label>
+                  </div>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Category</option>
+                    <option value="1">Category One</option>
+                    <option value="2">Category Two</option>
+                    <option value="3">Category Three</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating">
+                    <textarea class="form-control" rows="2" placeholder="Description" id="desc"></textarea>
+                    <label for="floatingTextarea">Demo Links</label>
+                  </div>
+              </div>
+             
+              <button type="submit" class="btn btn-primary btn-sm">Submit</button> 
+            </form>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer bg-masthead small text-center text-white">
+<div class="container px-4 px-lg-5">Copyright &copy; CustomFit 2024</div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--include jQuery-->
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<!-- Core custom JS-->
+<script src="js/scripts.js"></script>
+<!--Search Modal-->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Search CustomFit</h5>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Search Form -->
+          <form>
+            <div class="mb-3">
+              <label for="searchInput" class="form-label">Enter Your Fitness Goal</label>
+              <input type="text" class="form-control" id="searchInput" placeholder="Eg. Biceps">
+            </div>
+            <!-- Add any additional form fields as needed -->
+          </form>
+        </div>
+        <div class="modal-footer">      
+          <button type="button" class="btn btn-primary">Get Exercise Recommendation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
