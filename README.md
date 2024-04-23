@@ -12,5 +12,6 @@
 
 ## How to run Only Html/CSS/JS (Frontend) Version Of Custom Fit 
 1. Open the final year project folder on VS Code
-2. Select One of the HTML files down below
-3. Go live and explore the website
+2. Click on 'fitness' folder
+3. Select One of the HTML files down below
+4. Go live and explore the website
