@@ -6,7 +6,7 @@
 2. Install mongoDB Shell - https://www.mongodb.com/try/download/shell
 3. Install npm -- https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 4. Install the project, open the final-year-project-main folder and run the project on VScode
-   a. `cd CustomFit`
+   a. `cd customFit`
    b. run `npm install` on the terminal
    c. run `npm start` on the terminal
    d. Access the web at http://localhost:3001
